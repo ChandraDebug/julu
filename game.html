@@ -1,0 +1,188 @@
+<html>
+
+<head>
+  <title>Julu : Fun with Animals</title>
+  <link rel="icon" href="Images/icon.png">
+  <link rel="stylesheet" type="text/css" href="game.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Podkova:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <img style="position:absolute;width:22rem; top:0;z-index:1;left:0" src="Images/Julu.png"></img>
+
+  <!--An invisble div to retrieve the images of the game-->
+  <div id="images">
+    <img src="Images/4.png" id="character">
+    <img src="Images/charactercrouch.png" id="crouch">
+    <img src="Images/3.png" id="jump">
+    <!--Obstacle images-->
+    <img src="Images/wombat.jpg" id="tumbleweed">
+    <img src="Images/magpie.png" id="bird">
+    <img src="Images/Galah.png" id="bird2">
+     <img src="Images/kag.png" id="bird3">
+      <img src="Images/koala.png" id="bird4">
+      <img src="Images/fun.png" id="fun">
+
+    <!--house image for the end of a Level-->
+    <img src="Images/house.png" id="house">
+  </div>
+
+  <div>
+
+    <table class="w-100" style="position:absolute; z-index:2;">
+      <tr>
+        <td>
+
+          <div id="stats" class="bubble">
+            <p class="text temperature"></p>
+            <p class="text distance"></p>
+            <strong>
+              <p class="text water"></p>
+            </strong>
+
+            <p style="padding:1rem;" class="text" id="result"></p>
+          </div>
+
+
+            <div class=" bubble overlay" id="fact1">
+
+                <p class="text">
+                  <strong>Wombats</strong>
+
+                <img class="img img-responsive" src="https://ginninderry.com/wp-content/uploads/2021/10/GIN_INSPIRE_Web_Images_1200x800_Creatures_9-600x400.jpg"></img>
+                Wombats can run at a speed of 40kph—that’s impressive.
+
+                </p>
+
+                <button class="text btn btn-success btn-lg" type="button" id="close1">Resume play <span class="glyphicon glyphicon glyphicon-play"></span></button>
+
+              </div>
+
+              <div class=" bubble overlay" id="fact2">
+                <p class="text">
+
+                  <strong>Eastern Bearded Dragon</strong>
+
+                  <img class="img img-responsive" src="https://ginninderry.com/wp-content/uploads/2021/10/GIN_INSPIRE_Web_Images_1200x800_Creatures_4-600x400.jpg"></img>
+                   The Bearded Dragon can change its colour from yellow to black when it feels threatened and puffs up its neck to make it look more fierce. It also uses this skill to regulate its body temperature by making itself lighter in hot weather and darker when it’s cold. What a clever little critter.</p>
+                 <button class="text btn btn-success btn-lg"  type="button" id="close2">Resume Play <span class="glyphicon 	glyphicon glyphicon-play"></span></button>
+
+              </div>
+
+              <div class=" bubble overlay" id="fact3">
+                <p class="text">
+                <strong>Broad-palmed Frog</strong>
+                <img class="img img-responsive" src="https://ginninderry.com/wp-content/uploads/2021/10/GIN_INSPIRE_Web_Images_1200x800_Creatures_3-600x400.jpg"></img>
+                Many of Canberra’s Broad-palmed frog population is found along the Murrumbidgee River. It truly is a special place.</p>
+                 <button class="text btn btn-success btn-lg"  type="button" id="close3">Resume Play <span class="glyphicon 	glyphicon glyphicon-play"></span></button>
+
+              </div>
+
+              <div class=" bubble overlay" id="fact4">
+                <p class="text">
+                  <strong>Double-barred Finch</strong>
+                  <img class="img img-responsive" src="https://ginninderry.com/wp-content/uploads/2021/10/GIN_INSPIRE_Web_Images_1200x800_Creatures_2-600x400.jpg"></img>
+                  The Double-barred Finch builds a rounded nest, with a side entrance and short tunnel into an inner chamber lined with grasses, feathers, moss, lichen and the down from fluffy seed heads.
+
+ </p>
+                 <button class="text btn btn-success btn-lg"  type="button" id="close4">Resume Play <span class="glyphicon 	glyphicon glyphicon-play"></span></button>
+
+              </div>
+
+              <div class=" bubble overlay" id="fact5">
+                <p class="text">
+                <strong>Eastern Long-necked Turtle</strong>
+                <img class="img img-responsive" src="https://ginninderry.com/wp-content/uploads/2021/10/GIN_INSPIRE_Web_Images_1200x800_Creatures_7-600x400.jpg"></img>
+
+                The Eastern Long-necked Turtles are armed with a rather gross defensive mechanism whereby they squirt out a stinking liquid from their scent glands just above each leg. If you are ever helping out a turtle from harm’s way, make sure you pick them up from the shell and move them in the direction they were going, otherwise they will just try and go back the same way.</p>
+                 <button class="text btn btn-success btn-lg"  type="button" id="close5">Resume Play <span class="glyphicon 	glyphicon glyphicon-play"></span></button>
+
+              </div>
+
+              <div class=" bubble overlay" id="fact6">
+                <p class="text"><strong>Wallaroo</strong> <img class="img img-responsive" src="https://ginninderry.com/wp-content/uploads/2021/10/GIN_INSPIRE_Web_Images_1200x800_Creatures_10-600x400.jpg"></img>
+                A female wallaroo can become pregnant soon after giving birth. The new embryo stays dormant until the older joey is ready to exit the pouch. This process is called embryonic diapause.</p>
+                 <button class="text btn btn-success btn-lg"  type="button" id="close6">Resume Play <span class="glyphicon 	glyphicon glyphicon-play"></span></button>
+
+              </div>
+
+
+
+
+
+          <!--Health bar-->
+          <div style="z-index: 3;">
+            <div class="area">
+              <div class="total"></div>
+              <div class="health-box">
+                <div class="health-bar-red"></div>
+                <div class="health-bar-blue"></div>
+                <div class="health-bar"></div>
+                <div class="health-bar-text"></div>
+              </div>
+            </div>
+          </div>
+
+        </td>
+
+      </tr>
+      <tr>
+        <td>
+          <audio controls autoplay loop style="margin-top:5%;">
+            <source src="Sound/man-is-he-mega-glbml-22045.mp3" type="audio/mpeg">
+          </audio>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="container" style="z-index:1">
+    <div class="row">
+      <!--The canvas will be where the game is played-->
+      <canvas class="col-12 p-0" id="canvas"></canvas>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- <div class="modal" id="fact1" role="dialog">-->
+  <!--  <div class="modal-dialog modal-lg">-->
+
+      <!-- Modal content-->
+  <!--    <div class="modal-content">-->
+  <!--      <div class="modal-header">-->
+          <!-- modal header  -->
+  <!--        <button type="button" class="close" data-dismiss="modal">&times;</button>-->
+  <!--        <h4 class="modal-title">Bootstrap 3 Modal Header</h4>-->
+  <!--      </div>-->
+  <!--      <div class="modal-body">-->
+        <!-- begin modal body content  -->
+  <!--        <section class="stage">-->
+  <!--          <figure class="ball"><span class="shadow"></span></figure>-->
+  <!--        </section>-->
+        <!-- end modal body content  -->
+  <!--      </div>-->
+  <!--      <div class="modal-footer">-->
+          <!-- modal footer  -->
+  <!--        <center>Bootstrap 3 Modal Footer</center>-->
+  <!--        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+  <!--      </div>-->
+  <!--    </div>-->
+
+  <!--  </div>-->
+  <!--</div>-->
+
+
+
+
+  <script src="runningGame.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+html
+{
+  font-size: 100%;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Images/20123112.jpg");
+
+  background-position: 0% 25%;
+  color: #043C5B;
+   background-size: 300px 100px, cover;
+}
+
+h1 {
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-family: 'Podkova', serif;
+  font-size: 96px;
+  margin-bottom: 8%;
+}
+
+table {
+  margin-top: 5%;
+  margin-left: 13%;
+}
+
+#column1 {
+  width: 70rem;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 2%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #d1b6b2;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+/*.button:hover .overlay {*/
+/*  width: 100%;*/
+/*}*/
+
+/*button {*/
+/*  position: relative;*/
+/*  margin-left: 2%;*/
+/*  font-family: 'Poppins', sans-serif;*/
+/*  font-size: 36px;*/
+/*  font-style: italic;*/
+/*  font-weight: 500;*/
+/*  margin-top: 10%;*/
+/*  background-color: #FFECE9;*/
+/*  width: 456px;*/
+/*  height: 92px;*/
+/*  border-width: 4px;*/
+/*  border-style: solid;*/
+/*  color: #043C5B;*/
+/*  border-color: #043C5B;*/
+/*  transition: 0.3s;*/
+/*}*/
+
+/*button:hover {*/
+/*  background-color: #d1b6b2;*/
+/*  color: #01527e;*/
+/*  border-color: #01527e;*/
+/*}*/
+
+#person {
+  transform: rotate(15.11deg);
+  position: fixed;
+  bottom:30px;
+  left: 1225px;
+}
+
+#tumbleweed {
+  position: fixed;
+  left: 1000px;
+  bottom: 0;
+}
+#tumbleweed1 {
+  position: fixed;
+  left: 1300px;
+  bottom: 500px;
+}
+#tumbleweed2 {
+  position: fixed;
+  left: 1500px;
+  bottom: 700px;
+}
+#tumbleweed4 {
+  position: fixed;
+  left: 1300px;
+  bottom: 0;
+}
+
+
+.object {
+  animation: MoveUpDown 5s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
+
+.object2 {
+  animation: MoveUpDown 10s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+}
